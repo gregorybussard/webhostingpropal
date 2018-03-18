@@ -53,7 +53,7 @@
 										<sub>Cette page s'affiche mal sur téléphone mobile, utilisez plutôt un grand écran. Veuillez m'en excuser... J'y travaille!</sub>
 									</header>
 
-  <div class="spotlights">
+  <div class="spotlights" position="center">
   <!-- Le styles -->
   <link href="https://netdna.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://netdna.bootstrapcdn.com/bootstrap/2.2.2/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -127,17 +127,20 @@
     100% { opacity: 0; }
   }
 
+
   </style>
+  </div>
+	<div class="span12" id="canvas-container">
+	  <canvas id="canvas" class="canvas"></canvas>
+	  <div id="html-canvas" class="canvas hide"></div>
+	</div>
     <!-- <p class="lead">Mes <strong>compétences</strong>... en un nuage</p> -->
     <div id="not-supported" class="alert" hidden>
       <strong>Your browser is not supported.</strong>
     </div>
-    <form id="form" method="get" action="">
+    
+	<form id="form" method="get" action="">
       <div class="row">
-        <div class="span12" id="canvas-container">
-          <canvas id="canvas" class="canvas"></canvas>
-          <div id="html-canvas" class="canvas hide"></div>
-        </div>
         <div class="span6" hidden>
           <button class="btn btn-primary" type="submit">Run</button>
           <div class="btn-group">
