@@ -1704,11 +1704,17 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3 {
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
+	}
+	h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 1.65;
+		margin: 0 0 0em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
