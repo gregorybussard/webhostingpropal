@@ -122,17 +122,33 @@ d3.chart.dependencyWheel = function(options) {
         .on("mouseover", fade(0.1))
         .on("mouseout", fade(1));
 
-      g.append("svg:text")
+		
+      var text = g.append("svg:text")
         .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
+		.attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
         .attr("dy", ".35em")
-        .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+        .attr("fill", "white")
         .attr("transform", function(d) {
           return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" +
             "translate(" + (radius + 26) + ")" +
             (d.angle > Math.PI ? "rotate(180)" : "");
         })
-        .text(function(d) { return packageNames[d.index]; });
+        .text(function(d) { return packageNames[d.index].split('\n').shift(); });
 
+		var nextline = text.append('tspan');
+		nextline.text(function(d) {
+			line = packageNames[d.index].split('\n');
+			line.shift();
+			return line.shift();
+		}).attr("x","0").attr("y","30");
+		nextline = text.append('tspan');
+		nextline.text(function(d) {
+			line = packageNames[d.index].split('\n');
+			line.shift();
+			line.shift();
+			return line.shift();
+		}).attr("x","0").attr("y","60");
+		
       gEnter.selectAll("path.chord")
           .data(chord.chords)
         .enter().append("svg:path")
