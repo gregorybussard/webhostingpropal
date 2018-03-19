@@ -20,7 +20,7 @@ var examples = {
 '3 Agiles\n' +
 '3 carte~à~puces\n' +
 '3 Cloud\n' +
-'3 Centrale~Lille\n' +
+'3 Centrale~Lille http://centralelille.fr/\n' +
 '3 Java http://www.oracle.com/technetwork/java/index.html\n' +
 '3 AWS https://aws.amazon.com/\n' +
 '3 IoT https://www.gsma.com/\n' +
