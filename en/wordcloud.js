@@ -3,18 +3,17 @@
 var examples = {
   'greg': {
     list: '5 Management\n' +
-'5 Architecte\n' +
-'4 géo-redondance\n' +
-'4 RGPD https://www.eugdpr.org/\n' +
+'5 Architect\n' +
+'4 geo-redondancy\n' +
 '4 OWASP https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf\n' +
 '4 KMS\n' +
 '4 IoT https://www.gsma.com/\n' +
+'4 GDPR https://www.eugdpr.org/\n' +
 '4 5x9\n' +
-'3 scalabilité\n' +
+'3 scalability\n' +
 '3 key~ceremony\n' +
 '3 eUICC\n' +
-'3 cryptographie\n' +
-'3 connectivité\n' +
+'3 connectivity\n' +
 '3 WAF\n' +
 '3 VPN\n' +
 '3 Telecoms http://www.etsi.org/\n' +
@@ -24,53 +23,54 @@ var examples = {
 '3 PCI~DSS https://www.pcisecuritystandards.org/pci_security/\n' +
 '3 LTE\n' +
 '3 DevOps\n' +
+'3 Cryptography\n' +
 '3 CloudFormation https://aws.amazon.com/cloudformation/\n' +
 '3 B2B\n' +
 '3 AWS https://aws.amazon.com/\n' +
-'2 process\n' +
+'2 processes\n' +
 '2 integration\n' +
-'2 embarqués\n' +
-'2 bancaires https://www.emvco.com/\n' +
-'2 accréditations\n' +
-'2 Sécurité\n' +
-'2 Systèmes\n' +
+'2 certifications\n' +
+'2 bankings https://www.emvco.com/\n' +
+'2 System\n' +
 '2 Startup\n' +
-'2 Projets\n' +
-'2 Personnalisation\n' +
+'2 Security\n' +
+'2 Projects\n' +
+'2 Personnalization\n' +
 '2 JavaCard\n' +
 '2 Java http://www.oracle.com/technetwork/java/index.html\n' +
 '2 International\n' +
-'2 Inspirateur\n' +
+'2 Inspiring\n' +
 '2 Gemalto https://www.gemalto.com\n' +
+'2 Embedded\n' +
 '2 Atlassian https://www.atlassian.com/\n' +
-'2 Agiles\n' +
+'1 Agile\n' +
+'1 workflow\n' +
 '1 stateless\n' +
-'1 rendements\n' +
-'1 recherche\n' +
-'1 projets~européen https://ec.europa.eu/info/research-and-innovation_en\n' +
-'1 méthodologies\n' +
 '1 monitoring\n' +
-'1 génération\n' +
-'1 design\n' +
+'1 methodologies\n' +
+'1 generation\n' +
 '1 coordination\n' +
-'1 communication\n' +
-'1 certificats\n' +
-'1 carte~à~puces\n' +
+'1 certificates\n' +
 '1 builds\n' +
-'1 académique\n' +
-'1 Standards  \n' +
+'1 academics\n' +
+'1 Standards\n' +
 '1 Solutions\n' +
+'1 Smart-Card\n' +
 '1 Services\n' +
-'1 Réseau\n' +
-'1 Industrialisation\n' +
-'1 Déploiement\n' +
+'1 Research\n' +
+'1 Network\n' +
+'1 Industrialization\n' +
+'1 European projects https://ec.europa.eu/info/research-and-innovation_en\n' +
 '1 Dublin\n' +
-'1 Consultant\n' +
+'1 Design\n' +
+'1 Deployment\n' +
+'1 Consulting\n' +
+'1 Communication\n' +
 '1 Cloud\n' +
 '1 Centrale~Lille http://centralelille.fr/\n' +
-'1 CPS https://www.emvco.com/emv-technologies/contact/\n' +
+'1 CPS https://www.emvco.com/emv-technologies/contact/\n'+
 '1 Austin\n' +
-'1 workflow\n' ,
+'1 yield\n' ,
     option: '{\n' +
 			'  gridSize: Math.round(16 * $(\'#canvas\').width() / 1024),\n' +
             '  weightFactor: 3,\n' +
