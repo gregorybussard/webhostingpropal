@@ -18,6 +18,21 @@
 	</head>
 	<body>
 
+		<script>
+		function setCitation(lang) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+				//if (this.status == 200) {
+					document.getElementById("citation").innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", "https://lomxxebn50.execute-api.us-east-1.amazonaws.com/production/getCitationLambda?lang="+lang, true);
+			xhttp.send();
+
+		}
+		</script>
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -51,23 +66,10 @@
 							<header class="major">
 								<h1>Gregory Bussard's online resume</h1>
 							</header>
-							<div id="citation" class="content">
-							</div>
+							<text id="citation">Le plus beau métier d’homme est le métier d’unir les hommes.</text>
+							<font size="0"><a onclick="setCitation()">Choose another quote that fits me using <i>AWS Lambda</i>.</a></font>
 							<script>
-								var nbCit = 3;
-								var citations = [["\"The grandeur of a profession is...above all, uniting men.\"", "Antoine de Saint-Exupéry"],
-												 ["\"Success consists of going from failure to failure without loss of enthusiasm.\"","Winston Churchill"],
-												 ["\"That which does not kill us, makes us stronger.\"","Friedrich Nietzsche"]];
-								var found = citations[Math.floor(Math.random() * nbCit)];
-								var h = document.createElement("H4");                // Create a <h4> element
-								var t = document.createTextNode(found[0]);     // Create a text node
-								h.appendChild(t);
-								var p = document.createElement("P");                // Create a <P> element
-								var t2 = document.createTextNode(found[1]);     // Create a text node
-								p.appendChild(t2);
-								var citation = document.getElementById("citation");
-								citation.appendChild(h);
-								citation.appendChild(p);
+							setCitation("en");
 							</script>
 						</div>
 					</section>
